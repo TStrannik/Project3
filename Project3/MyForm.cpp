@@ -22,6 +22,10 @@ int main(array<String^>^ args) {
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	std::cout << "Start of Application" << std::endl;
 
+
+
+
+
 	BaseClass BCE;
 	std::cout << "BSE.sayMyName return: " << BCE.sayMyName("Hisenberg") << std::endl;
 	std::cout << "BSE.trippling return: " << BCE.tripling(1.24)			<< std::endl;
@@ -32,6 +36,8 @@ int main(array<String^>^ args) {
 	std::cout << "BSE.trippling return: " << ACE.tripling(1.01)			<< std::endl;
 
 
+	// Ne idet
+	//childClass CEE;
 
 
 

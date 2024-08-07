@@ -120,10 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="addedClass.cpp" />
+    <ClCompile Include="childClass.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addedClass.h" />
+    <ClInclude Include="childClass.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
