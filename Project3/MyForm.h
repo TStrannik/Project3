@@ -119,25 +119,28 @@ struct BaseClass {
 public:
 
 	BaseClass() {
-		std::cout << "log: BaseClass constructed" << std::endl;
+		std::cout << "BaseClass()" << std::endl;
 	}
 
 	~BaseClass() {
-		std::cout << "log: BaseClass destructed" << std::endl;
+		std::cout << "~BaseClass()" << std::endl;
 	}
 
 
-	// Опять тип не работает
-	/*String^ sayMyName(String^ name) {
-		String^ result = "Default";
 
-		if (name == "Hisenberg") result = "you God damn right!";
+	char* sayMyName(char* name) {
+		char* result = "Default";
+
+
+		// equaling not work
+		if (name == "Hisenberg") { result = "You God damn right!"; }
 
 		return result;
-	}*/
+	}
 
-	int sayGavka() {
-		return 22;
+
+	float tripling(float n) {
+		return n * 3;
 	}
 
 private:
