@@ -19,8 +19,14 @@ int main(array<String^>^ args) {
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	std::cout << "log: start of Application" << std::endl;
 
+
+	BaseClass BSE;
+
+
 	APPLICATION_START();
 
+
 	std::cout << "log: The Application is closed" << std::endl;
+	system("pause");
 	return 0;
 }

@@ -77,6 +77,7 @@ namespace Project3 {
 			this->label1->Size = System::Drawing::Size(92, 35);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"label1";
+			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// MyForm
 			// 
@@ -101,5 +102,30 @@ namespace Project3 {
 		std::cout << "log: Hello, World! #" << HWCouter << std::endl;
 	}
 
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+		std::cout << "log: label1_Click" << std::endl;
+
+
+	}
+
+
 	};
 }
+
+
+// https://gist.github.com/NickTikhomirov/051349d9997ce66439a7176792ce19cb
+
+struct BaseClass {
+public:
+
+	BaseClass() {
+		std::cout << "log: BaseClass constructed" << std::endl;
+	}
+
+	~BaseClass() {
+		std::cout << "log: BaseClass destructed" << std::endl;
+	}
+private:
+	int inA;
+	int inB;
+};
