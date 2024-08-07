@@ -92,9 +92,13 @@ namespace Project3 {
 
 		}
 #pragma endregion
+	unsigned int HWCouter = 0;
+
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		label1->Text = L"Hello, World!";
-		std::cout << "log: Hello, World!" << std::endl;
+
+		HWCouter++;
+		std::cout << "log: Hello, World! #" << HWCouter << std::endl;
 	}
 
 	};
