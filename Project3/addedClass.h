@@ -12,4 +12,5 @@ public:
 private:
 	int inA;
 	int inB;
+	int inC;
 };
