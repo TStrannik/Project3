@@ -13,4 +13,5 @@ private:
 	int inA;
 	int inB;
 	int inC;
+	int inD;
 };
