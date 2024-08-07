@@ -125,6 +125,21 @@ public:
 	~BaseClass() {
 		std::cout << "log: BaseClass destructed" << std::endl;
 	}
+
+
+	// Опять тип не работает
+	/*String^ sayMyName(String^ name) {
+		String^ result = "Default";
+
+		if (name == "Hisenberg") result = "you God damn right!";
+
+		return result;
+	}*/
+
+	int sayGavka() {
+		return 22;
+	}
+
 private:
 	int inA;
 	int inB;
