@@ -21,9 +21,10 @@ int main(array<String^>^ args) {
 	std::cout << "log: start of Application" << std::endl;
 
 	BaseClass BSE;
+	
+	std::cout << "log: BSE.sayMyName return: " << BSE.sayMyName("Hisenberg") << std::endl;
 
-	//MessageBox::Show(BSE.sayMyName("Hisenberg"));
-	MessageBox::Show(BSE.sayGavka().ToString());
+	std::cout << "log: BSE.trippling return: " << BSE.tripling(1.24) << std::endl;
 
 
 	APPLICATION_START();
