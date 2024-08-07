@@ -21,5 +21,6 @@ int main(array<String^>^ args) {
 
 	APPLICATION_START();
 
+	std::cout << "log: The Application is closed" << std::endl;
 	return 0;
 }
