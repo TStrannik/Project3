@@ -29,7 +29,7 @@ int main(array<String^>^ args) {
 
 
 	addedClass ACE;
-	std::cout << "BSE.trippling return: " << ACE.tripling(1.01) << std::endl;
+	std::cout << "BSE.trippling return: " << ACE.tripling(1.01)			<< std::endl;
 
 
 
