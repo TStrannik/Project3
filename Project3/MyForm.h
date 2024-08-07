@@ -1,3 +1,5 @@
+#include<iostream>
+
 #pragma once
 
 namespace Project3 {
@@ -92,6 +94,7 @@ namespace Project3 {
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		label1->Text = L"Hello, World!";
+		std::cout << "log: Hello, World!" << std::endl;
 	}
 
 	};
