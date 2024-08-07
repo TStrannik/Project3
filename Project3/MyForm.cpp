@@ -16,7 +16,7 @@ int APPLICATION_START() {
 
 int main(array<String^>^ args) {
 
-	MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	std::cout << "log: start of Application" << std::endl;
 
 	APPLICATION_START();
