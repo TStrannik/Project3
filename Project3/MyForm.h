@@ -99,12 +99,13 @@ namespace Project3 {
 		label1->Text = L"Hello, World!";
 
 		HWCouter++;
-		std::cout << "log: Hello, World! #" << HWCouter << std::endl;
+		std::cout << "Hello, World! #" << HWCouter << std::endl;
 	}
 
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-		std::cout << "log: label1_Click" << std::endl;
+		std::cout << "label1_Click" << std::endl;
 
+		
 
 	}
 
@@ -118,30 +119,16 @@ namespace Project3 {
 struct BaseClass {
 public:
 
-	BaseClass() {
-		std::cout << "BaseClass()" << std::endl;
-	}
+	BaseClass()  { std::cout << "BaseClass()" << std::endl;  }
+	~BaseClass() { std::cout << "~BaseClass()" << std::endl; }
 
-	~BaseClass() {
-		std::cout << "~BaseClass()" << std::endl;
-	}
-
-
-
+	float tripling(float n) { return n * 3; }
 	char* sayMyName(char* name) {
-		char* result = "Default";
-
-
-		// equaling not work
-		if (name == "Hisenberg") { result = "You God damn right!"; }
-
-		return result;
+		// not work
+		if ((char*)name == (char*)"Hisenberg") { return "You God damn right!"; } 
+		return "Default";				
 	}
-
-
-	float tripling(float n) {
-		return n * 3;
-	}
+	
 
 private:
 	int inA;

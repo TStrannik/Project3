@@ -2,6 +2,8 @@
 #include <Windows.h>
 #include <iostream>
 
+#include "addedClass.h"
+
 using namespace System;
 using namespace System::Windows::Forms;
 
@@ -18,23 +20,30 @@ int APPLICATION_START() {
 int main(array<String^>^ args) {
 
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
-	std::cout << "log: start of Application" << std::endl;
+	std::cout << "Start of Application" << std::endl;
 
-	BaseClass BSE;
-	
-	std::cout << "log: BSE.sayMyName return: " << BSE.sayMyName("Hisenberg") << std::endl;
-
-	std::cout << "log: BSE.trippling return: " << BSE.tripling(1.24) << std::endl;
+	BaseClass BCE;
+	std::cout << "BSE.sayMyName return: " << BCE.sayMyName("Hisenberg") << std::endl;
+	std::cout << "BSE.trippling return: " << BCE.tripling(1.24)			<< std::endl;
 
 
+
+	addedClass ACE;
+	std::cout << "BSE.trippling return: " << ACE.tripling(1.01) << std::endl;
+
+
+
+
+
+
+
+	////////////////////
+	////////////////////
 	APPLICATION_START();
+	////////////////////
+	////////////////////
 
-
-
-
-	BSE.~BaseClass();
-
-	std::cout << "log: The Application is closed" << std::endl;
+	std::cout << "Application is closed" << std::endl;
 	system("pause");
 	return 0;
 }
