@@ -42,6 +42,8 @@ namespace Project3 {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Button^ btnABC;
+	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::ListBox^ listBox2;
 
 	private:
 		/// <summary>
@@ -61,6 +63,8 @@ namespace Project3 {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->btnABC = (gcnew System::Windows::Forms::Button());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox2 = (gcnew System::Windows::Forms::ListBox());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -78,7 +82,7 @@ namespace Project3 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(322, 205);
+			this->label1->Location = System::Drawing::Point(16, 216);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(92, 35);
 			this->label1->TabIndex = 1;
@@ -89,30 +93,48 @@ namespace Project3 {
 			// 
 			this->textBox1->Location = System::Drawing::Point(22, 12);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(200, 20);
+			this->textBox1->Size = System::Drawing::Size(246, 20);
 			this->textBox1->TabIndex = 2;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(22, 38);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(200, 20);
+			this->textBox2->Size = System::Drawing::Size(246, 20);
 			this->textBox2->TabIndex = 3;
 			// 
 			// btnABC
 			// 
-			this->btnABC->Location = System::Drawing::Point(228, 11);
+			this->btnABC->Location = System::Drawing::Point(274, 11);
 			this->btnABC->Name = L"btnABC";
 			this->btnABC->Size = System::Drawing::Size(75, 20);
 			this->btnABC->TabIndex = 4;
 			this->btnABC->Text = L"ABC";
 			this->btnABC->UseVisualStyleBackColor = true;
 			// 
+			// listBox1
+			// 
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->Location = System::Drawing::Point(22, 64);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(164, 95);
+			this->listBox1->TabIndex = 6;
+			// 
+			// listBox2
+			// 
+			this->listBox2->FormattingEnabled = true;
+			this->listBox2->Location = System::Drawing::Point(192, 64);
+			this->listBox2->Name = L"listBox2";
+			this->listBox2->Size = System::Drawing::Size(76, 95);
+			this->listBox2->TabIndex = 7;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(580, 260);
+			this->Controls->Add(this->listBox2);
+			this->Controls->Add(this->listBox1);
 			this->Controls->Add(this->btnABC);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
@@ -144,7 +166,7 @@ namespace Project3 {
 }
 
 
-// https://gist.github.com/NickTikhomirov/051349d9997ce66439a7176792ce19cb
+
 
 public struct BaseClass {
 public:
