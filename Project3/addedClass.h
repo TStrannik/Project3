@@ -4,8 +4,8 @@
 ref struct addedClass
 {
 public:
-	 addedClass() { std::cout << "addedClass()"  << std::endl; }
-	~addedClass() { std::cout << "~addedClass()" << std::endl; }
+	 addedClass() { std::cout << " addedClass()"  << std::endl; }
+	~addedClass() { std::cout << " ~addedClass()" << std::endl; }
 
 	virtual float tripling(float n);
 
