@@ -17,7 +17,7 @@ void APPLICATION_START() {
 	Project3::MyForm form;
 	Application::Run(% form);
 }
-// ver 0.2.2 stable
+// ver 0.2.2r stable
 int main(array<String^>^ args) {
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	PRE_START();
