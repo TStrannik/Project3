@@ -87,6 +87,7 @@ namespace Project3 {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MyForm";
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -96,17 +97,14 @@ namespace Project3 {
 	unsigned int HWCouter = 0;
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		label1->Text = L"Hello, World!";
+		label1->Text = L" Hello, World!";
 
 		HWCouter++;
-		std::cout << "Hello, World! #" << HWCouter << std::endl;
+		std::cout << " Hello, World! #" << HWCouter << std::endl;
 	}
 
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-		std::cout << "label1_Click" << std::endl;
-
-		
-
+		std::cout << " label1_Click" << std::endl;
 	}
 
 
@@ -116,25 +114,28 @@ namespace Project3 {
 
 // https://gist.github.com/NickTikhomirov/051349d9997ce66439a7176792ce19cb
 
-struct BaseClass {
+public struct BaseClass {
 public:
+	 BaseClass() { std::cout << " BaseClass()"  << std::endl; }
+	~BaseClass() { std::cout << " ~BaseClass()" << std::endl; }
 
-	BaseClass()  { std::cout << "BaseClass()" << std::endl;  }
-	~BaseClass() { std::cout << "~BaseClass()" << std::endl; }
-
-	float tripling(float n) { return n * 3; }
-	char* sayMyName(char* name) {
-		// not work
-		if ((char*)name == (char*)"Hisenberg") { return "You God damn right!"; } 
-		return "Default";				
-	}
-	
+	float tripling(float n)		{ return n * 3; }
+	char* sayMyName(char* name) { return name;  }	
 
 private:
 	int inA;
 	int inB;
+
 };
 
-struct ChildClass : BaseClass {
+struct ChildClass : public BaseClass {
+public:
+	 ChildClass() { std::cout << " ChildClass()"  << std::endl; }
+	~ChildClass() { std::cout << " ~ChildClass()" << std::endl; }
+
+	float tripling(float n) { return n * 33; }								   // method redefined
+
+private:
+	int inCA;
 
 };
