@@ -134,3 +134,7 @@ private:
 	int inA;
 	int inB;
 };
+
+struct ChildClass : BaseClass {
+
+};
