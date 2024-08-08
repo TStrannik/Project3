@@ -17,7 +17,7 @@ int APPLICATION_START() {
 	Application::Run(% form);
 	return 0;
 }
-
+// ver 0.2.0
 int main(array<String^>^ args) {
 
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
