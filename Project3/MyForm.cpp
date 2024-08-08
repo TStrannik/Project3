@@ -44,11 +44,9 @@ int main(array<String^>^ args) {
 	
 
 
-	////////////////////
-	////////////////////
+
 	APPLICATION_START();
-	////////////////////
-	////////////////////
+	
 
 	std::cout << "Application is closed" << std::endl;
 	system("pause");
