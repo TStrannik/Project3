@@ -39,20 +39,18 @@ int main(array<String^>^ args) {
 	std::cout << " ChCl.trippling: " << ChCl.tripling(1.01)    << std::endl;
 	std::cout << std::endl;
 
-
 	addedClass adCl;
 	std::cout << " adCl.trippling: " << adCl.tripling(1.01) << std::endl;
 	std::cout << std::endl;
 
+	chillClass clCl;	clCl.pubA = 2;
+	std::cout << " clCl.get_gavka: " << clCl.get_gavka(4) << std::endl;
+
+
+
 
 	// Ne idet
 	//childClass CEE;
-
-	chillClass clCl;
-
-	clCl.pubA = 2;
-
-	std::cout << " clCl.get_gavka: " << clCl.get_gavka(4) << std::endl;
 	
 
 
