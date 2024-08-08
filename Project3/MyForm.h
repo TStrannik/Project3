@@ -69,7 +69,8 @@ namespace Project3 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(437, 217);
+			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->button1->Location = System::Drawing::Point(493, 225);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -82,7 +83,7 @@ namespace Project3 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(16, 216);
+			this->label1->Location = System::Drawing::Point(16, 205);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(92, 35);
 			this->label1->TabIndex = 1;
@@ -177,8 +178,8 @@ public:
 	char* sayMyName(char* name) { return name;  }	
 
 private:
-	int inA;
-	int inB;
+	int inA_;
+	int inB_;
 
 };
 
@@ -190,6 +191,6 @@ public:
 	float tripling(float n) { return n * 33; }								   // method redefined
 
 private:
-	int inCA;
+	int inCA_;
 
 };
