@@ -10,7 +10,7 @@ using namespace System::Windows::Forms;
 
 [STAThreadAttribute]
 
-void PRE_START() {
+void PRE_START();
 void APPLICATION_START() {
 	Application::SetCompatibleTextRenderingDefault(false);
 	Application::EnableVisualStyles();
