@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "addedClass.h"
+#include "childClass.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -37,10 +38,10 @@ int main(array<String^>^ args) {
 
 
 	// Ne idet
-	//childClass CEE;
+	childClass CEE;
 
 
-
+	
 
 
 	////////////////////
