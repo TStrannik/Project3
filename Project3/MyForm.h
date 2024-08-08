@@ -39,6 +39,9 @@ namespace Project3 {
 	private: System::Windows::Forms::Button^ button1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Button^ btnABC;
 
 	private:
 		/// <summary>
@@ -55,6 +58,9 @@ namespace Project3 {
 		{
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->btnABC = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -72,18 +78,44 @@ namespace Project3 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(219, 93);
+			this->label1->Location = System::Drawing::Point(322, 205);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(92, 35);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"label1";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(22, 12);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(200, 20);
+			this->textBox1->TabIndex = 2;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(22, 38);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(200, 20);
+			this->textBox2->TabIndex = 3;
+			// 
+			// btnABC
+			// 
+			this->btnABC->Location = System::Drawing::Point(228, 11);
+			this->btnABC->Name = L"btnABC";
+			this->btnABC->Size = System::Drawing::Size(75, 20);
+			this->btnABC->TabIndex = 4;
+			this->btnABC->Text = L"ABC";
+			this->btnABC->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(580, 260);
+			this->Controls->Add(this->btnABC);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";

@@ -22,7 +22,7 @@ int main(array<String^>^ args) {
 
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
 	std::cout << std::endl <<" Start of Application\n" << std::endl;
-
+	
 
 
 
@@ -57,3 +57,18 @@ int main(array<String^>^ args) {
 	system("pause");
 	return 0;
 }
+
+// КЛАССЫ
+// 
+// (+) Создать базовый класс
+// (+) Создать дочерний класс
+// (+) Создать базовый класс в .h + .cpp
+// ( ) Создать дочерний класс в .h + .cpp
+// 
+// ( ) Подключить внешние классы файлами .h + .cpp
+
+
+
+// GIT
+// 
+// ( ) мастер-ветка v0.2.0
