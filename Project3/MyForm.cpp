@@ -58,17 +58,43 @@ int main(array<String^>^ args) {
 	return 0;
 }
 
+
+
+
+
 // КЛАССЫ
 // 
 // (+) Создать базовый класс
 // (+) Создать дочерний класс
 // (+) Создать базовый класс в .h + .cpp
 // ( ) Создать дочерний класс в .h + .cpp
-// 
-// ( ) Подключить внешние классы файлами .h + .cpp
+// ( ) 
+// ( ) 
+// ( ) 
 
+// Sorting algorithm
+// ( ) 
+// ( ) 
 
+// Vector
+// ( ) 
+// ( ) 
+// ( ) 
 
 // GIT
 // 
 // ( ) мастер-ветка v0.2.0
+
+// Указатели
+// ( ) 
+
+// Threads
+// ( ) 
+
+
+// RoadMap
+// https://codelab.pro/roadmap-po-izucheniyu-c-v-2024-godu/
+// 
+// Classes
+// https://gist.github.com/NickTikhomirov/051349d9997ce66439a7176792ce19cb
+// 
