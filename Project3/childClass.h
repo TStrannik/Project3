@@ -13,6 +13,6 @@ private:
     
 
 public:
-    int inCA;
+    int inCA_;
 };
 

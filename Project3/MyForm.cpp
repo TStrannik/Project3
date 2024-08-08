@@ -21,7 +21,9 @@ int APPLICATION_START() {
 int main(array<String^>^ args) {
 
 	//MessageBox::Show(L"Welcome to App", L"Application start", MessageBoxButtons::OK, MessageBoxIcon::Information);
-	std::cout << std::endl <<" Start of Application\n" << std::endl;
+
+	system("color 70");
+	std::cout << "\n APPLICATION START\n" << std::endl;
 	
 
 
@@ -46,6 +48,16 @@ int main(array<String^>^ args) {
 	// Ne idet
 	//childClass CEE;
 
+	chillClass clCl;
+
+	clCl.pubA = 2;
+
+	std::cout << " clCl.get_gavka: " << clCl.get_gavka(4) << std::endl;
+	
+
+
+
+
 
 	std::cout << std::endl << std::endl;
 
@@ -53,7 +65,7 @@ int main(array<String^>^ args) {
 	APPLICATION_START();
 	
 
-	std::cout << " Application is closed" << std::endl;
+	std::cout << "\n APPLICATION END\n\n";
 	system("pause");
 	return 0;
 }
@@ -67,28 +79,33 @@ int main(array<String^>^ args) {
 // (+) Создать базовый класс
 // (+) Создать дочерний класс
 // (+) Создать базовый класс в .h + .cpp
+// (+) Создать дочерний класс в файле базового
 // ( ) Создать дочерний класс в .h + .cpp
 // ( ) 
 // ( ) 
 // ( ) 
 
 // Sorting algorithm
-// ( ) 
+//
 // ( ) 
 
 // Vector
-// ( ) 
+//
 // ( ) 
 // ( ) 
 
 // GIT
 // 
+// ( ) откат-ветвление
 // ( ) мастер-ветка v0.2.0
 
+
 // Указатели
+// 
 // ( ) 
 
 // Threads
+// 
 // ( ) 
 
 
